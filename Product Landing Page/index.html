@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kgosi, The Shoogun" />
+    <meta
+      name="description"
+      content="This is the landing page for The Glorious Spud Club, which is the number one marketplace dedicated to sourcing a selection of regional potatoes from other countries."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.freepik.com/256/4887/4887842.png?semt=ais_hybrid"
+      type="image/x-icon"
+    />
+    <title>The Glorious Spud Market</title>
+  </head>
+  <body>
+    <!-- || The landing page will be split into three parts, being "header", "main", and "footer." 
+    - Within the "header" element, there'll be the page's navigation bar and the hero section with a CTA.
+     -->
+    <header id="header">
+      <!-- The navigation bar is a flex "div" container, with the class "nav-container" that contains two nested "div" elements.
+
+      - The first "div" if for the landing page's logo.
+      - The second "div" is for the page's links to the different sections of the page.
+      -->
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/4887/4887842.png?semt=ais_hybrid"
+            alt="Potato Logo"
+            id="header-img"
+            class="header-img"
+            width="50"
+            height="50"
+          />
+          <p>The Glorious Spud Market</p>
+        </div>
+        <div class="nav-links">
+          <nav class="nav-bar" id="nav-bar">
+            <ol>
+              <li><a href="#home" class="nav-link" id="nav-link">Home</a></li>
+              <li>
+                <a href="#product" class="nav-link" id="nav-link">Products</a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-link" id="nav-link">Contact</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <section id="home">
+        <div class="home-section-container">
+          <div class="cta-text">
+            <h1>
+              Become a part of the
+              <span class="hero-span">glorious spud</span> community.
+            </h1>
+            <p>
+              When it comes to pototoes, we all know that enough is never
+              enough. And that is exactly how we feel about the number of
+              vendors and potato loving brethren that join or are a part of our
+              community. We're always looking to increase our numbers and have
+              more members who'll share their love of the glorious spud.
+            </p>
+          </div>
+
+          <div class="cta-button">
+            <a href="#contact">Join Now</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- || MAIN -->
+      <!-- Note!!!
+             - This part of the webpage contains three sections. 
+             - The first just contains an embedded media player, that shows a tribute video to the potato when the user click play, and just some brief information about the potato. The second section contains a contact form for the page where the user can enter their email to join the Glorious Spud Club. 
+       -->
+      <section id="product">
+        <div class="product-video">
+          <iframe
+            id="video"
+            title="Youtube Video Player"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ervmt65MUpI?si=0Z5eFF5bJ6KgMcZs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br /><br /><br /><br /><br />
+
+        <div class="product-information">
+          <!-- 
+            The ".information" div is a flex container containing two more div elements. Below is some guideline information on what to know when it comes to the styling of the flex container and it's elements:
+           -->
+          <!-- || 1. -->
+          <div class="information">
+            <div class="information-number">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9f/King_Edward.jpg"
+                alt="King Edward Potato"
+                width="250"
+                height="250"
+                class="information-image"
+              />
+              <p>$1.00/KG</p>
+            </div>
+            <div class="information-text">
+              <h2>King Edward</h2>
+              <p>
+                Grown in the UK since 1902, this spud has a variety of culinary
+                uses and is renowned for its light fluffy texture. It's suitable
+                for roasting, mashed potato, and frying as chips.
+              </p>
+            </div>
+          </div>
+
+          <!-- || 2. -->
+          <div class="information">
+            <div class="information-number">
+              <img
+                src="https://specialtyproduce.com/sppics/16382.png"
+                alt="Kerr Pink Potato"
+                width="250"
+                height="250"
+                class="information-image"
+              />
+              <p>$1.50/KG</p>
+            </div>
+            <div class="information-text">
+              <h2>Kerr's Pink</h2>
+              <p>
+                Often quoted as an "Irish potato", this spud has a distinctive
+                pink colour with deep eyes. They are qyure floury and starchy
+                and are very good for mashing and boiling but can be chipped.
+              </p>
+            </div>
+          </div>
+
+          <!-- || 3. -->
+          <div class="information">
+            <div class="information-number">
+              <img
+                src="https://res.cloudinary.com/fedcloud/image/upload/w_1200,h_1200,f_auto,c_limit/fedcoseeds.com/moose/moose_images/7052.jpg?46"
+                alt="Russet Burbank Potato"
+                width="250"
+                height="250"
+                class="information-image"
+              />
+              <p>$3.99</p>
+            </div>
+            <div class="information-text">
+              <h2>Russet Burbank</h2>
+              <p>
+                A potato cultivar with dark brown skin and few eyes that is the
+                most widely grown potato in North America. It's flesh is white,
+                dry, and mealy, and is good for baking, mashing, and chips
+                (french fries).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-container">
+          <div class="contact-form">
+            <div class="form-image"></div>
+            <div class="form-information">
+              <form
+                action="https://www.freecodecamp.com/email-submit"
+                id="form"
+                method="get"
+              >
+                <h2>Become a part of The Glorious Spud Market's community.</h2>
+                <label for="name">Name</label>
+                <input
+                  type="name"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
+                <label for="surname">Surame</label>
+                <input
+                  type="surname"
+                  id="surname"
+                  name="surname"
+                  placeholder="Enter Surname"
+                  required
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Email Address"
+                  required
+                />
+                <input type="submit" id="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="contact">
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          id="form"
+          method="get"
+        >
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email Address"
+            required
+          />
+          <input type="submit" id="submit" />
+        </form>
+      </section> -->
+    </main>
+
+    <!-- || FOOTER -->
+    <footer>
+      <p>&copy; 2025, The Glorious Spud Market.</p>
+    </footer>
+  </body>
+</html>

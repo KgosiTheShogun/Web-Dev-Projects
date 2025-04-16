@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || Simple CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+/* || This is the container for the entire navbar that's at the top of the page. */
+.nav-container {
+  width: 100%;
+  height: 100px;
+  background-color: #fca311;
+  margin-bottom: 50px;
+
+  /* || flex properties */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* || position properties */
+  position: fixed;
+  top: 0;
+}
+
+/* || PAGE LOGO */
+.nav-logo {
+  margin-left: 25px;
+  height: 100%;
+
+  /* flex properties */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-logo img {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+}
+
+.nav-logo p {
+  font-family: "Libre Baskerville";
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.nav-bar ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 25px;
+  gap: 20px;
+}
+
+.nav-bar li {
+  display: inline;
+  /* background-color: #000000;
+  padding: 10px 10px 10px;
+  border-radius: 10%; */
+}
+
+.nav-link {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 10px 10px;
+  border-radius: 10%;
+}
+
+.nav-link:hover {
+  color: #e5e5e5;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 10px 10px 10px;
+  border-radius: 10%;
+}
+.nav-link:focus {
+  color: #e5e5e5;
+  text-decoration: underline;
+  padding: 10px 10px 10px;
+  border-radius: 10%;
+}
+
+/* || WELCOME SCREEN / CTA */
+.hero-span {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  color: #fca311;
+}
+
+#home {
+  width: 100%;
+  margin: auto;
+  padding-top: 300px;
+}
+
+/* The home section, which contains the page's CTA has a nested div element with a class of "home-section-container".
+- I'll be applying flex to this container to create spacing between the individual elements that are a part of the CTA, so the "h1", "p", and the "p" that acts as a button sending the user's to the "contact" section of the page.
+
+Note!!!
+- The "home-section-container" div element will have a "width" of 100% of it's parent element, being the "#home" section element.
+- The div element is a flex container, that is in a column form. the gap between the items is 5px.
+*/
+
+.home-section-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.cta-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cta-button {
+  width: auto;
+  margin: auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  width: 100%;
+  font-family: "Bebas Neue";
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.cta-text p {
+  width: 450px;
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10px;
+  margin: auto;
+}
+
+.cta-button a {
+  width: 100%;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 1.5rem;
+}
+
+.cta-button a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+#product {
+  width: 75%;
+  margin: auto;
+  height: auto;
+  padding-top: 300px;
+
+  /* || Flex Properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-video {
+  margin: auto;
+}
+
+/* || PRODUCT SECTION CONTAINER */
+.product-information {
+  /* (This means that this is taking up only a width of 50% of it's parent, the #about section) */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 300px;
+}
+
+.information {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  /* background-color: #fca311; */
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px 20px 20px;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.information-number {
+  width: auto;
+  height: 100%;
+  background-color: #fca311;
+  border-radius: 10px;
+  color: #000000;
+
+  /* || flex properties */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* .information-number, */
+.information-text {
+  height: auto;
+  background-color: #000000;
+  border-radius: 10px;
+
+  /* || flex Properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.information-text h2 {
+  font-size: 3rem;
+  color: #fff;
+  padding: 0 0 15px;
+  text-align: center;
+}
+
+.information-number img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.information-number p {
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 25px 10px;
+  text-align: center;
+}
+
+.information-text {
+  padding: 20px;
+}
+
+.information-text p {
+  font-size: 1rem;
+}
+
+.product-information p {
+  display: inline;
+  color: whitesmoke;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* || CONTACT FORM  */
+#contact {
+  padding-top: 50px;
+}
+.contact-container {
+  width: 100%;
+  height: auto;
+}
+
+.contact-form {
+  width: 75%;
+  height: 600px;
+  margin: 100px auto;
+  background-color: #faedcd;
+  border-radius: 10px;
+  border-top: 5px solid #000000;
+  border-left: 5px solid #000000;
+  border-right: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+
+  /* || Flex Properties */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.form-image {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: url("https://cookieandkate.com/images/2020/12/rosemary-roasted-potatoes-recipe.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.form-information {
+  height: auto;
+}
+
+.form-information form {
+  height: auto;
+  padding-top: 50px;
+
+  /* || Flex Properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.form-information label,
+.form-information input {
+  display: block;
+  font-size: 1rem;
+}
+
+.form-information label {
+  font-weight: bold;
+}
+
+.form-information input {
+  padding: 10px;
+}
+
+#submit {
+  background-color: #fca311;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #fca311;
+  padding: 50px;
+}
+footer p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/* || MEDIA QUEURY */
+@media screen and (min-width: 500px) {
+  body {
+    background-color: #fefae0;
+  }
+}

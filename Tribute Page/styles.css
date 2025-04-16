@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #cad0ff, #e3e3e3);
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+}
+
+ul {
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.date {
+  font-weight: bold;
+}

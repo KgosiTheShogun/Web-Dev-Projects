@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* || HTML RESET*/
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--PRIMARY-COLOR);
+}
+
+/* || VARIABLES*/
+:root {
+  /* 
+  Color Variables
+  Note!!!
+    - The colors listed below together form the color palette for the portfolio page. utilize the Coolers.co  Palette Visualizer to see what the color palette would look like on a page.
+  */
+  --PRIMARY-COLOR: #001514;
+  --SECONDARY-COLOR: #fbffee;
+  --TERTIARY-COLOR: #6b0504;
+  --TERTIARY-TONE: #a3320b;
+  --CONTRAST-COLOR: #e6af2e;
+  --NAVBAR-BORDER-COLOR: #000;
+  --SECTION-COLOR: #fff;
+}
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  background-color: var(--SECONDARY-COLOR);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue";
+}
+
+#navbar {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--PRIMARY-COLOR);
+  border-bottom: 1px solid var(--NAVBAR-BORDER-COLOR);
+
+  /* font properties */
+  font-family: "Bebas Neue";
+  font-size: 1.5rem;
+
+  /* flex properties */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* position properties */
+  position: fixed;
+  top: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: var(--SECONDARY-COLOR);
+}
+
+.nav-links a:hover {
+  background-color: var(--CONTRAST-COLOR);
+  color: var(--PRIMARY-COLOR);
+  border-radius: 5px;
+}
+
+.nav-links a:focus {
+  color: var(--SECONDARY-COLOR);
+  text-decoration: underline;
+}
+
+/* || WELCOME SECTION */
+
+section {
+  min-height: 100vh;
+  padding: 70px 0;
+}
+
+#welcome-section {
+  width: 50%;
+  margin: auto;
+  color: var(--PRIMARY-COLOR);
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-top: 30vh;
+}
+
+#welcome-section p {
+  margin: 20px 0;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.welcome-text {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  text-transform: lowercase;
+  color: var(--CONTRAST-COLOR);
+}
+
+/* || */
+
+#projects {
+  background-color: var(--PRIMARY-COLOR);
+  color: var(--SECONDARY-COLOR);
+}
+
+#projects .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  place-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#projects h2 {
+  font-size: 2.75rem;
+  border-bottom: 5px solid var(--SECONDARY-COLOR);
+  width: fit-content;
+  margin: auto;
+}
+
+#projects .project-tile {
+  height: 416px;
+  width: 504px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--SECONDARY-COLOR);
+  color: var(--TERTIARY-COLOR);
+  border-radius: 10px;
+  box-shadow: 8px 89x 10px 5px rgb(100, 100, 100, 0.3);
+}
+
+#projects .project-tile iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* || CONTACT SECTION */
+#contact {
+  background-color: var(--SECONDARY-COLOR);
+  color: var(--PRIMARY-COLOR);
+}
+
+#contact h2 {
+  font-size: 2.75rem;
+  margin-top: 300px;
+}
+
+#contact p {
+  /*  margin: 20px 0; */
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+#contact .social-medias {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#contact .social-media {
+  text-decoration: none;
+  color: var(--TERTIARY-TONE);
+  transition: transform 0.2s ease-in;
+  margin: 20px;
+  font: 1.5rem;
+}
+
+#contact .social-media:hover {
+  transform: translateY(10px);
+}
+
+footer {
+  border-top: 3px solid var(--TERTIARY-TONE);
+  color: var(--SECONDARY-COLOR);
+  font-size: 1.25rem;
+  padding: 30px;
+  background-color: var(--PRIMARY-COLOR);
+}
+
+@media only screen and (width < 700px) {
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+
+  #projects .project-tile {
+    height: 616px;
+    width: 100%;
+  }
+}
